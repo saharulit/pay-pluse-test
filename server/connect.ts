@@ -1,7 +1,9 @@
 import mongoose from 'mongoose';
 
 const uri =
-  'mongodb+srv://sahar:gXV9cTVbeOw6PCzm@pay-plus.au5ac.mongodb.net/?retryWrites=true&w=majority&appName=pay-plus';
+  'mongodb+srv://saharulit:gXV9cTVbeOw6PCzm@pay-plus.au5ac.mongodb.net/pay-plus-test?retryWrites=true&w=majority';
+
+//Should be in env file
 
 export const connectMongoDB = async () => {
   try {

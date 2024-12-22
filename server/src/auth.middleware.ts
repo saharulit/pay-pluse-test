@@ -24,7 +24,6 @@ export const authenticate = async (
       id: string;
     };
 
-    // Attach the user to the request object
     const user = await User.findById(decoded.id).select('-password').exec();
 
     if (user) {
