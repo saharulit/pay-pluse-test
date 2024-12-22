@@ -7,12 +7,16 @@ export const getUserCustomer = async (
   req: Request,
   res: Response
 ): Promise<void> => {
-  console.log(req)
+  console.log(req);
+  //take user details from request
+  //get customers using user id
 };
 
 export const createUserCustomer = async (
   req: Request,
   res: Response
 ): Promise<void> => {
-  console.log(req)
+  console.log(req);
+  //take user details from request
+  //get customers using user id
 };
