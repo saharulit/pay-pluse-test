@@ -2,7 +2,7 @@
   "name": "server",
   "private": true,
   "scripts": {
-    "start": "node --watch dist/server.js",
+    "start": "node --watch dist/server.ts",
     "build": "tsc",
     "dev": "ts-node server.ts",
     "test": "jest"

@@ -2,6 +2,7 @@ import { Request, Response } from 'express';
 import jwt from 'jsonwebtoken';
 import User from '../modals/user.modal';
 import { IUser } from '../modals/type';
+import { JWT_SECRET } from '../consts';
 
 export const registerUser = async (
   req: Request,
@@ -57,7 +58,7 @@ export const loginUser = async (req: Request, res: Response): Promise<void> => {
 };
 
 const generateToken = (id: string): string => {
-  return jwt.sign({ id }, process.env.JWT_SECRET as string, {
+  return jwt.sign({ id }, JWT_SECRET as string, {
     expiresIn: '1h',
   });
 };
