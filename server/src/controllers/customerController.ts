@@ -18,5 +18,5 @@ export const createUserCustomer = async (
 ): Promise<void> => {
   console.log(req);
   //take user details from request
-  //get customers using user id
+  //create customers using user id
 };
